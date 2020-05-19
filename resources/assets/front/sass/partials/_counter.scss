@@ -1,0 +1,40 @@
+.counter{
+   position: relative;
+   height: 90px;
+   line-height: 90px;
+   padding: 0 15px;
+   transition: 0.3s all ease-in;
+   border-right: 1px solid #E7EAF2;
+   border-bottom: 1px solid #E7EAF2;
+   border-left: 1px solid #E7EAF2;
+    box-shadow: 0 4px 10px rgba(186, 191, 206, 0.3);
+    z-index: 1;
+    background-color: white;
+
+    p{
+      line-height: 30px;
+      display: inline-block;
+    }
+    .result{
+      line-height: 30px;
+      padding: 0 5px;
+   }
+   &__btn{
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 28px;
+      text-align: center;
+      border-radius: 100%;
+      border: 1px solid $grey-color;
+      color:  $grey-color;
+      font-size: 22px;
+      transition: .3s all ease-in;
+      cursor: pointer;
+
+      &:hover{
+         border: 1px solid $orange-color;
+         color:  $orange-color;
+      }
+   }
+}

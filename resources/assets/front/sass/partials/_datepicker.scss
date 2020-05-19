@@ -1,0 +1,62 @@
+.datepicker{
+   &__wrapper{
+    height: 90px !important;
+    line-height: 90px;
+    padding: 0 15px 0 15px;
+    transition: 0.3s all ease-in;
+    background: none !important;
+
+    &:hover{
+      background-color: $orange-color !important;
+
+      .datepicker__input{
+         background-color: $orange-color !important;
+      }
+   }
+   }
+   &__clear-button{
+      svg{
+         position: absolute !important;
+         right: 5px !important;
+         top: 5px !important;
+         stroke: $grey-color;
+      }
+   }
+   &__dummy-wrapper{
+      border:none !important;
+   }
+   &__input{
+      transition: 0.3s all ease-in;
+      width: 50% !important;
+      height: 90px !important;
+      line-height: 90px !important;
+      font-size: 1rem !important;
+      font-weight: 500 !important;
+      font-family: $font-family-primary;
+      color: $main-grey-color !important;
+
+      &:first-child{
+         background: #fff url(/front/img/icons/calendar.svg) no-repeat 5px/25px !important;
+         border-right: 1px solid $grey-color;
+         padding: 0 0 0 25px !important;
+         // padding: 0 52px 0 25px !important;
+      }
+      &:last-child{
+         background: #fff url(/front/img/icons/calendar.svg) no-repeat 15px/25px !important;
+         padding: 0 0 0 50px !important;
+      }
+      &:focus{
+         outline: none !important;
+      }
+   }
+}
+.datepicker{
+   top:90px !important;
+   &__month-day--selected{
+      background-color: $orange-color !important;
+   }
+   &__month-day--first-day-selected,
+   &__month-day--last-day-selected{
+      background-color: $orange-color !important;
+   }
+}

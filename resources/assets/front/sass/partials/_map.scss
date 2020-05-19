@@ -1,0 +1,98 @@
+#whitemap{
+   path{
+      cursor:pointer;
+      transition: .6s all ease-in;
+      &:hover{
+         opacity: 1;
+      }
+   }
+   .map-title{
+     fill: white;
+     opacity: 1;
+
+   }
+
+   .cls-1,.cls-2,.cls-3,.cls-4{fill:#fff;}
+   .cls-1{opacity:0.3;}
+   .cls-1,.cls-3,.cls-4{isolation:isolate;}
+   .cls-2{opacity:0.25;}
+   .cls-3{opacity:0.35;}
+   .cls-4{opacity:0.3;}
+   .active{
+      opacity: 1;
+      .map-title{
+        fill:#9095A0;
+      }
+   }
+}
+
+
+#map{
+   path{
+      cursor:pointer;
+      @extend .transition;
+   }
+   .cls-1, .cls-2, .cls-3, .cls-4, .cls-5,
+    .st0, .st1, .st2, .st3, .st4{
+      &:hover{
+         stroke: #66B4C3;
+         fill: #66B4C3;
+      }
+   }
+   .cls-5{fill:#bbd8dd;}
+   .cls-2{fill:#fff;}
+   .cls-3{fill:#99c4cc;}
+   .cls-4{fill:#78B0BC;}
+   .cls-1{fill:#78b0bc;}
+   .st0{fill:#66B4C3;stroke:#66B4C3;stroke-width:3;stroke-miterlimit:10;}
+	.st1{fill:#7FC0CD;stroke:#7FC0CD;stroke-width:3;stroke-miterlimit:10;}
+	.st2{fill:#B2D9E1;stroke:#B2D9E1;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:#99CDD7;stroke:#99CDD7;stroke-width:3;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+
+}
+.map{
+   margin-bottom: 30px;
+
+   @media (min-width: $screen-sm-min) {
+      margin-bottom: 0;
+   }
+}
+.wrap{
+   @media (min-width: $screen-md-min) {
+      height: 450px;
+      display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+   }
+   @media (min-width: $screen-lg-min) {
+      height: 500px;
+   }
+
+   .info-map{
+      -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+   }
+}

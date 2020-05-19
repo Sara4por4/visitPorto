@@ -1,0 +1,187 @@
+body,
+html{
+   font-size: 15px;
+   color: $dark-grey-color;
+   font-family: $font-family-primary;
+}
+body,
+.editable{
+   font-family: $font-family-primary;
+  font-weight: $font-weight-regular;
+  color: $dark-grey-color;
+  font-size: 1rem;
+
+  > p {
+    margin: 10px 0;
+  }
+}
+
+.big-title{
+   font-weight: $font-weight-light;
+   font-size: 2.6rem;
+   // font-size: 40px;
+   line-height: 3.5rem;
+   letter-spacing: 0.7rem;
+   text-transform: uppercase;
+
+   @media (min-width: $screen-sm-min) {
+      font-size: 4rem;
+      // font-size: 60px;
+      line-height: 4.7rem;
+      letter-spacing: 1rem;
+   }
+}
+
+.section-title{
+   font-weight: $font-weight-regular;
+   font-size: 1.3rem;
+   // font-size: 22px;
+   line-height: 1.9rem;
+   letter-spacing: 0.05rem;
+
+   @media (min-width: $screen-sm-min) {
+      font-size: 2rem;
+      // font-size: 30px;
+      line-height: 2.7rem;
+      // line-height: 40px;
+      letter-spacing: 0.1rem;
+   }
+
+   &--caps{
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      line-height: 2rem;
+
+      @media (min-width: $screen-sm-min) {
+         letter-spacing: 0.4rem;
+         line-height: 3rem;
+      }
+   }
+   &--bold{
+      font-weight: $font-weight-bold;
+   }
+}
+
+.title{
+   font-weight: $font-weight-medium;
+   font-size: 1.1rem;
+   // font-size: 22px;
+   line-height: 1.7rem;
+   letter-spacing: 0.2rem;
+   text-transform: uppercase;
+
+   @media (min-width: $screen-sm-min) {
+      font-size: 1.4rem;
+      // font-size: 22px;
+      line-height: 2rem;
+      letter-spacing: 0.25rem;
+   }
+}
+
+.subtitle{
+   font-weight: $font-weight-bold;
+   font-size: .8rem;
+   // font-size: 12px;
+   line-height: 1.2rem;
+   letter-spacing: 0.15rem;
+   text-transform: uppercase;
+
+   &--regular{
+     font-weight: $font-weight-light;
+     text-transform: initial;
+     letter-spacing: 0.05rem !important;
+   }
+   &--medium{
+     font-weight: $font-weight-medium;
+   }
+   &--lowercase{
+     text-transform: initial;
+     letter-spacing: 0.03rem !important;
+   }
+
+   @media (min-width: $screen-sm-min) {
+      font-size: 1rem;
+      // font-size: 15px;
+      line-height: 1.7rem;
+      letter-spacing: 3.75px;
+   }
+   @media (min-width: $screen-md-min) {
+      font-size: 1.35rem;
+      // font-size: 20px;
+      line-height: 2rem;
+      letter-spacing: 4px;
+   }
+}
+
+.text{
+   font-weight: $font-weight-regular;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  &--bold{
+    font-weight: $font-weight-bold !important;
+    letter-spacing: .3rem;
+  }
+  &--semibold{
+    font-weight: $font-weight-semibold;
+  }
+  &--medium{
+    font-weight: $font-weight-medium;
+  }
+  &--caps{
+     text-transform: uppercase;
+     font-weight: $font-weight-medium;
+     letter-spacing: .2rem;
+ }
+}
+.small-text{
+   font-weight: $font-weight-regular;
+  font-size: .8rem;
+  // font-size: 12px;
+  line-height: 1.1rem;
+  letter-spacing: .05rem;
+  &--semibold{
+     font-weight: $font-weight-semibold !important;
+  }
+  &--regular{
+     font-weight: $font-weight-regular !important;
+  }
+  &--bold{
+     font-weight: $font-weight-bold;
+  }
+   &--medium{
+      font-weight: $font-weight-medium;
+   }
+   &--caps{
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: $font-weight-bold;
+   }
+}
+.tiny-text{
+   font-weight: $font-weight-semibold;
+  font-size: .7rem;
+  // font-size: 12px;
+  line-height: 1rem;
+  letter-spacing: .03rem;
+
+  &--medium{
+    font-weight: $font-weight-medium;
+  }
+
+  &--caps{
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.1rem;
+  }
+}
+
+
+a{
+  outline: none;
+  transition: .3s all;
+
+ &:focus,
+  &:hover{
+    outline: none;
+  }
+}

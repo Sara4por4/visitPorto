@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15">
+  <g id="_012-food" data-name="012-food" transform="translate(0 -80)">
+    <g id="Grupo_10618" data-name="Grupo 10618" transform="translate(3.607 80)">
+      <g id="Grupo_10617" data-name="Grupo 10617" transform="translate(0 0)">
+        <path id="Caminho_2544" data-name="Caminho 2544" d="M87.213,80a7.318,7.318,0,1,0,7.213,7.317A7.274,7.274,0,0,0,87.213,80Zm0,13.9A6.586,6.586,0,1,1,93.7,87.317,6.539,6.539,0,0,1,87.213,93.9Z" transform="translate(-80 -80)" fill="#00829b"/>
+      </g>
+    </g>
+    <g id="Grupo_10620" data-name="Grupo 10620" transform="translate(5.77 82.195)">
+      <g id="Grupo_10619" data-name="Grupo 10619" transform="translate(0 0)">
+        <path id="Caminho_2545" data-name="Caminho 2545" d="M133.049,128a5.122,5.122,0,1,0,5.049,5.122A5.091,5.091,0,0,0,133.049,128Zm0,9.512a4.391,4.391,0,1,1,4.328-4.39A4.359,4.359,0,0,1,133.049,137.512Z" transform="translate(-128 -128)" fill="#00829b"/>
+      </g>
+    </g>
+    <g id="Grupo_10622" data-name="Grupo 10622" transform="translate(0 82.195)">
+      <g id="Grupo_10621" data-name="Grupo 10621" transform="translate(0 0)">
+        <path id="Caminho_2546" data-name="Caminho 2546" d="M2.525,128a.363.363,0,0,0-.361.366v2.561H1.8v-2.561a.361.361,0,1,0-.721,0v2.561H.721v-2.561A.363.363,0,0,0,.361,128a.363.363,0,0,0-.361.366v3.293H1.082v8.78a.361.361,0,1,0,.721,0v-8.78H2.885v-3.293A.363.363,0,0,0,2.525,128Z" transform="translate(0 -128)" fill="#00829b"/>
+      </g>
+    </g>
+    <g id="Grupo_10624" data-name="Grupo 10624" transform="translate(18.393 82.195)">
+      <g id="Grupo_10623" data-name="Grupo 10623" transform="translate(0 0)">
+        <path id="Caminho_2547" data-name="Caminho 2547" d="M411.607,130.378a1.873,1.873,0,1,0-3.607,0,2.311,2.311,0,0,0,1.452,2.332.4.4,0,0,0-.009.046v7.683a.361.361,0,1,0,.721,0v-7.683a.383.383,0,0,0-.009-.046A2.311,2.311,0,0,0,411.607,130.378Zm-1.8,1.646c-.586,0-1.082-.754-1.082-1.646s.5-1.646,1.082-1.646,1.082.754,1.082,1.646S410.39,132.024,409.8,132.024Z" transform="translate(-408 -128)" fill="#00829b"/>
+      </g>
+    </g>
+  </g>
+</svg>

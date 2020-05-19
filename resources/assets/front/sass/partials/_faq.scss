@@ -1,0 +1,25 @@
+.faq{
+   &__answer{
+      padding-top: 30px;
+   }
+   &__question{
+      font-family: $font-family-primary;
+      a{
+         span{
+            float: right;
+            font-size: 18px;
+            color: $red-color;
+
+         }
+         &:focus,
+         &:hover{
+            text-decoration: none;
+            color: $grey-color;
+
+            span{
+               color: $grey-color;
+            }
+         }
+      }
+   }
+}

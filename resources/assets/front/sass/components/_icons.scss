@@ -1,0 +1,85 @@
+
+/**
+ * Font mixins
+ *
+ * Author: José Osório
+ * Copyright 2016
+ */
+
+$icons: (
+   /* miscelaneous */
+   menu            : '\F394',
+   search          : '\f349',
+   close           : '\f156',
+   send            : '\f2C3',
+   clock           : '\f3b3',
+   share           : '\fb6f',
+   quote           : '\f347',
+   headphone       : '\f140',
+   play            : '\f215',
+   photo           : '\f2d3',
+   email           : "\f1f0",
+   pin            : "\fc71",
+   chat           : "\fb55",
+   compass           : "\f18b",
+   heart           : '\f2d1',
+   user           : '\f6bb',
+   plus           : '\F156',
+   plus-round       : '\f417',
+   pencil           : '\f3eb',
+   timer           : '\f51b',
+   wheelchair           : '\f5a4',
+   globo            : '\f1e7',
+   map            : '\f5f5',
+   link            : '\f339',
+   help            : '\f625',
+   phone            : '\f8d2',
+   subject            : '\f186',
+   garbage            : '\fa79',
+   info            : '\f2fd',
+   printer            : '\f42a',
+
+
+
+   /* arrows */
+   arrow-top     : '\f05d',
+   arrow-down     : '\F045',
+   arrow-right     : '\f054',
+   arrow-left      : '\f04d',
+   arrow-back      : "\f21e",
+   arrow-next      : "\f13a",
+   caret-up        : '\f143',
+   caret-down      : '\f140',
+   caret-left      : '\f141',
+   caret-right      : "\f125",
+   caret-long-right : '\f301',
+
+   /* social media */
+   facebook         : '\f20c',
+   twitter          : '\f544',
+   youtube          : '\f5c3',
+   vimeo            : '\f577',
+   instagram        : '\f2fe',
+   whatsapp         : '\f5a3',
+   linkedin         : '\f33b',
+);
+
+
+.icon {
+  &--left{
+    margin-right: 10px;
+  }
+  &--right{
+    margin-left: 10px;
+  }
+	&::before {
+		font-family: $font-family-icons;
+		font-style: normal;
+	}
+
+	@each $modifier, $code in $icons {
+		&--#{$modifier}::before {
+			content: $code;
+		}
+	}
+}

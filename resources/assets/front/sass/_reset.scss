@@ -1,0 +1,113 @@
+/**
+ * Styles reset
+ *
+ * Author: José Osório
+ * Copyright 2016
+ */
+
+/**
+ * Body settings
+ */
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+/**
+ * Forms & inputs
+ */
+input, textarea, select, button
+{
+	padding: 0;
+	color: inherit;
+	font: inherit;
+	letter-spacing: inherit;
+	outline: none;
+	background: none;
+	border: none;
+}
+textarea{
+	resize: none;
+	overflow: hidden;
+}
+button{
+	padding: 0;
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6
+{
+	margin: 0;
+	padding: 0;
+}
+
+/**
+ *	Inline elements
+ */
+a
+{
+	color: inherit;
+	text-decoration: none;
+	outline: none;
+}
+
+/**
+ *	Block elements
+ */
+figure{
+	margin: 0;
+}
+
+hr{
+	border-width: 1px 0 0 0;
+	border-style: solid;
+}
+
+p{
+	margin: 0;
+}
+
+ul,
+ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+
+/*==========================================
+Big Grid Reset
+ ==========================================*/
+$screen-xl-min: 1630px;
+
+.container {
+	width: 100% !important;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+
+	@media (min-width: 1140px) {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	@media (min-width: 1366px) {
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+	@media (min-width: 1466px) {
+		padding-right: 15px!important;
+		padding-left: 15px!important;
+		max-width: 1245px;
+	}
+	/* ----------- Retina Screens ----------- */
+	@media (min-width: 1280px) and (max-width: 1440px) and (-webkit-min-device-pixel-ratio: 2){
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+}

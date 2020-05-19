@@ -1,0 +1,21 @@
+.article-base{
+  border-bottom: 1px solid $light-grey-color;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  @media (min-width: $screen-lg-min) {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+  }
+  .editable{
+    color: $dark-grey-color;
+  }
+
+  .link-sec{
+    display: block;
+    margin-top: 30px;
+    @media (min-width: $screen-lg-min) {
+      margin-top: 60px;
+    }
+  }
+}

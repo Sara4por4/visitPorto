@@ -1,0 +1,365 @@
+body{
+   position: relative;
+   font-size: 15px;
+   font-family: $font-family-primary;
+}
+.fixed-top{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 2;
+}
+.editable{
+
+  &.big-text{
+    h4{
+      font-size: 1.35rem;
+      // font-size: 20px;
+      line-height: 2rem;
+      font-weight: $font-weight-semibold;
+    }
+    p{
+      font-size: 1rem;
+      line-height: 1.7rem;
+      font-weight: $font-weight-light;
+
+      @media (min-width: $screen-md-min) {
+         font-size: 1.35rem;
+         // font-size: 20px;
+         line-height: 2rem;
+         letter-spacing: 0.05rem;
+      }
+    }
+  }
+   p{
+      margin: 0 !important;
+   }
+
+    p{
+     font-weight: $font-weight-light;
+     font-size: 1rem;
+     line-height: 1.65rem;
+    }
+    h3{
+      margin-bottom: 30px;
+      // font-size: 27px;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      // line-height: 37px;
+      font-weight: $font-weight-regular;
+
+      @media (min-width: $screen-xl-min) {
+        // font-size: 30px;
+        font-size: 2rem;
+        line-height: 2.7rem;
+        // line-height: 40px;
+        letter-spacing: 0.1rem;
+      }
+    }
+    h4{
+     font-weight: $font-weight-bold;
+     font-size: 2rem;
+     line-height: 2.6rem;
+     letter-spacing: .1rem;
+
+     @media (min-width: $screen-sm-min) {
+        margin: 30px 0;
+      }
+    }
+
+  h4{
+    margin: 15px 0;
+  }
+  img{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    display: block;
+
+    @media (min-width: $screen-sm-min) {
+      margin: 30px auto;
+    }
+    @media (min-width: $screen-lg-min) {
+      margin: 60px auto;
+    }
+  }
+  ul{
+    li{
+      position: relative;
+      list-style: none;
+
+      &:nth-of-type(n+2){
+        margin-top: 20px;
+      }
+
+    }
+  }
+}
+
+/**
+ * Container
+ */
+
+.container{
+    position: relative;
+
+    &--right{
+      padding-right: 0 !important;
+    }
+    &--left{
+      padding-left: 0 !important;
+    }
+    &--shrink{
+      margin: auto;
+
+      &.form{
+        @media (min-width: $screen-md-min) {
+          padding: 0 10%;
+        }
+        @media (min-width: $screen-lg-min) {
+          padding: 0 5%;
+        }
+      }
+
+      @media (min-width: $screen-sm-min) {
+        padding: 0 5%;
+      }
+      @media (min-width: $screen-md-min) {
+        padding: 0 10%;
+      }
+      @media (min-width: $screen-lg-min) {
+        max-width: 1035px;
+        padding: 0;
+      }
+      @media (min-width: $screen-xl-min) {
+         max-width: 1060px;
+      }
+
+      .section__header{
+        max-width: 100%;
+      }
+    }
+}
+
+/**
+ * Section
+ */
+.section{
+  position: relative;
+   margin-top:40px;
+
+   @media (min-width: $screen-md-min) {
+      margin-top:90px;
+   }
+   @media (min-width: $screen-xl-min) {
+      margin-top:120px;
+   }
+
+   &--sec{
+     margin-top:30px;
+
+     @media (min-width: $screen-md-min) {
+        margin-top:60px!important;
+     }
+   }
+
+   &:first-of-type{
+      margin-top:60px;
+
+      @media (min-width: $screen-md-min) {
+         margin-top:135px;
+      }
+   }
+   &.grey-color{
+     margin-top:0;
+     padding-top:40px;
+
+     @media (min-width: $screen-md-min) {
+        padding-top:90px;
+     }
+     @media (min-width: $screen-xl-min) {
+        padding-top:120px;
+     }
+   }
+   &.box{
+      padding-bottom: 30px;
+
+      @media (min-width: $screen-sm-min) {
+         padding-bottom: 60px;
+      }
+      @media (min-width: $screen-md-min) {
+         padding-bottom: 100px;
+      }
+
+      &::before{
+         content: '';
+         background-color: $grey-color;
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         right: 0;
+         // margin-top: -100px;
+         // margin-bottom:-100px;
+         height: auto;
+         width: 50%;
+
+         @media (min-width: $screen-sm-min) {
+            width: 30%;
+         }
+      }
+   }
+
+  &__header{
+   overflow: hidden;
+   color: $main-blue-color;
+   margin-bottom: 30px;
+
+   @media (min-width: $screen-sm-min) {
+      margin-bottom: 30px;
+   }
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 60px;
+      max-width: 80%;
+    }
+    @media (min-width: $screen-xl-min) {
+      max-width: 70%;
+    }
+    .section-title.grey{
+      color: $dark-grey-color;
+    }
+    &.grey{
+      color: $main-grey-color;
+      .subtitle{
+         font-size:1rem;
+         line-height: 1.4rem;
+         font-weight: $font-weight-medium;
+
+         @media (min-width: $screen-sm-min) {
+            font-size:20px;
+            line-height: 28px;
+         }
+      }
+
+      span{
+         color: $main-blue-color;
+         font-size: 1rem;
+         font-weight: $font-weight-bold;
+      }
+   }
+   .text--caps{
+      margin-bottom: 10px;
+
+      @media (min-width: $screen-md-min) {
+         margin-bottom: 30px;
+      }
+   }
+  }
+
+  &__container{
+
+  }
+}
+
+.divisor{
+  height: 1px;
+  width: 100%;
+  background-color: $grey-color;
+  border: none;
+  margin-bottom: 0;
+  margin-top: 60px;
+  @media (min-width: $screen-sm-min) {
+    margin-top: 120px;
+  }
+}
+
+// BG-COLOR
+.white-color{
+  background-color: $white-color;
+}
+.grey-color{
+   background-color: $grey-color;
+}
+.black-color{
+  background-color: $black-color;
+  padding: 30px;
+}
+
+.pagination{
+    width: 100%;
+    margin: 30px auto 0;
+    text-align: center;
+
+    @media (min-width: $screen-md-min) {
+      margin: 60px auto 0;
+    }
+
+  &__btn{
+    line-height: 30px;
+    width: 35px;
+    text-align: center;
+    font-size: 30px;
+    color: $grey-color;
+    display: inline-block;
+    vertical-align: middle;
+    @extend .transition;
+    &:hover{
+      color: $dark-grey-color;
+    }
+  }
+  &__nrs{
+    display: inline-block;
+    color: $main-blue-color;
+    padding: 0 30px;
+    vertical-align: middle;
+
+    p{
+      line-height: 30px;
+    }
+
+    .total{
+      padding-left: 5px;
+      font-weight: $font-weight-medium;
+    }
+    .active{
+      font-weight: $font-weight-bold;
+      padding-right: 5px;
+    }
+  }
+}
+
+
+.image{
+  @extend .full-img;
+  margin: auto;
+  display: block;
+  background-size: contain;
+  width: 100%;
+  height: auto;
+}
+
+// CENTER CONTENT
+.abs-center{
+  margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+  right: 0;
+	left: 0;
+}
+
+// FULL WITH&HEIGHT BG IMAGE
+.full-img{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center;
+  background-size: cover;
+}
+.transition{
+  transition: .3s all ease-in;
+}
+
+.centered{
+  margin: 30px auto;
+  display: block;
+}

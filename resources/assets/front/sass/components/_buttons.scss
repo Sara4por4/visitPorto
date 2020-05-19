@@ -1,0 +1,423 @@
+.large-btn{
+  font-size: 12px !important;
+  font-weight: $font-weight-bold !important;
+  letter-spacing: .1rem !important;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  color:$dark-grey-color;
+  background-color: $grey-color;
+  display: block;
+  line-height: 60px !important;
+  height: 60px;
+
+  &--blue{
+    color:$white-color;
+    background-color: $main-blue-color;
+    &:active,
+    &:focus,
+    &:hover{
+      background-color: $dark-blue-color !important;
+      color:$white-color !important;
+    }
+  }
+
+  &:active,
+  &:focus,
+  &:hover{
+    text-decoration: none;
+    background-color: $light-grey-color;
+    color:$dark-grey-color;
+  }
+}
+.switch-group {
+  *{
+    display: inline-block;
+  }
+  .switch {
+    margin-left: 15px;
+  }
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $grey-color;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: $main-blue-color;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px  $main-blue-color;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.dropdown-group{
+  &__menu{
+    padding: 0;
+    border: none;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.04);
+    min-width: 150px;
+
+    li{
+      height: 45px;
+      display: block;
+      padding: 0 15px;
+
+      &:nth-of-type(odd){
+        background-color: $grey-color;
+      }
+      &:hover{
+        a{
+          color: $black-color;
+        }
+      }
+    }
+    a{
+      letter-spacing: 0.02rem;
+      display: block;
+      line-height: 45px!important;
+      font-size: 10px;
+      font-weight: $font-weight-bold!important;
+      text-transform: uppercase;
+      padding: 0!important;
+      color: $dark-grey-color !important;
+      &:hover{
+        color: $black-color !important;
+        background-color: initial !important;
+      }
+    }
+  }
+}
+
+.explore-btn{
+  border-radius: 100%;
+  border: 2px solid $light-blue-color;
+  width: 29px;
+  height: 29px;
+  @extend .transition;
+  &:hover{
+    text-decoration: none;
+    border: 2px solid $main-blue-color;
+    .icon{
+      text-decoration: none;
+      color: $main-blue-color;
+    }
+  }
+  .icon{
+    margin: auto;
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    padding: 0;
+    font-size: 1rem;
+    color:$light-blue-color;
+    @extend .transition;
+  }
+  img{
+    width: 30px;
+  }
+}
+.btn{
+   position: relative;
+   font-family: $font-family-primary;
+   font-weight: $font-weight-semibold;
+   background-color: transparent;
+   color: white;
+  //text-transform: uppercase;
+  text-align: center;
+  min-width: 120px;
+  max-width: 100%;
+  outline: none;
+  border-radius: 3px;
+  @extend .transition;
+   z-index: 1;
+   line-height: 43px;
+   padding: 0 15px;
+   font-size: .8rem;
+   letter-spacing: .05rem;
+   border: 1px solid rgba(255, 255, 255, .3);
+
+   @media (min-width: $screen-sm-min) {
+      padding: 0 25px;
+      font-size: .8rem;
+      // font-size: 12px;
+   }
+
+   &::after{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      background-color: $main-blue-color;
+      transform: scaleY(0);
+      -webkit-transition: -webkit-transform .5s cubic-bezier(.165,.84,.44,1) 0s;
+      transition: -webkit-transform .5s cubic-bezier(.165,.84,.44,1) 0s;
+      transition: transform .5s cubic-bezier(.165,.84,.44,1) 0s;
+      transition: transform .5s cubic-bezier(.165,.84,.44,1) 0s,-webkit-transform .5s cubic-bezier(.165,.84,.44,1) 0s;
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+   }
+
+   .icon{
+     margin-left: 5px;
+   }
+
+   &:focus,
+   &:hover{
+      outline: none;
+      color: white;
+
+      &::after{
+         -webkit-transform: scaleY(1);
+         transform: scaleY(1);
+         -webkit-transform-origin: bottom left;
+         transform-origin: bottom left;
+      }
+   }
+
+  &--white{
+     color: white;
+     border: 1px solid rgba(255, 255, 255, .3);
+
+     &:focus,
+     &:hover{
+        color: $dark-grey-color;
+     }
+     &::after{
+        background-color: white;
+     }
+  }
+  &--blue{
+     color: $main-blue-color;
+     background-color: transparent;
+     border: 1px solid rgba(0, 130, 155, 0.3);
+  }
+
+  &--center{
+    margin: 50px auto 80px;
+    display: block;
+  }
+
+}
+
+.fixed-btns{
+   position: fixed;
+   right: 15px;
+   bottom: 150px;
+   z-index: 2;
+   display: none;
+
+   @media (min-width: $screen-sm-min) {
+      display: block;
+      bottom: 15px;
+   }
+   @media (min-width: $screen-md-min) {
+      bottom: 90px;
+   }
+
+   li{
+      button{
+         display: block;
+         text-align: center;
+         width: 30px;
+         height: 30px;
+         line-height: 28px;
+         background-color: white;
+         //border: 1px solid $main-blue-color;
+         color: $main-blue-color;
+         font-size: 1rem;
+         border-radius: 50px;
+         @extend .transition;
+         // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+         &:active,
+         &:focus,
+         &:hover{
+            text-decoration: none;
+         }
+      }
+
+      &.scroll{
+         button{
+            color: $dark-blue-color;
+            //border: 1px solid  $dark-blue-color;
+         }
+      }
+      &:nth-of-type(n+2){
+         margin-top: 10px;
+      }
+      &:active,
+      &:focus,
+      &:hover{
+         button{
+            outline:none;
+            text-decoration: none;
+            // box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+            background-color: $main-blue-color;
+            color:white;
+         }
+      }
+   }
+}
+
+.btn-round{
+   display: block;
+   text-align: center;
+   width: 60px;
+   height: 60px;
+   line-height: 58px;
+   background-color: white;
+   border: 2px solid $white-color;
+   color: $main-blue-color;
+   font-size: 2rem;
+   border-radius: 50px;
+   @extend .transition;
+   // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+   margin-top: 30px;
+
+   &:active,
+   &:focus,
+   &:hover{
+      text-decoration: none;
+   }
+
+   &--right{
+      float: right;
+   }
+}
+
+
+.link-sec{
+  cursor: pointer;
+   position: relative;
+   color: $main-grey-color;
+   font-size: .9rem;
+   font-weight: $font-weight-semibold;
+   letter-spacing: .05rem;
+   @extend .transition;
+   .icon{
+      font-size: .9rem;
+      margin-left: 10px;
+   }
+   &--left{
+     .icon{
+       margin-left: 0;
+       margin-right: 5px;
+     }
+   }
+
+   &:hover{
+      text-decoration: none;
+      color: $dark-grey-color;
+    }
+ }
+.link{
+   position: relative;
+   color: $main-grey-color;
+   font-size: .8rem;
+   font-weight: $font-weight-semibold;
+   letter-spacing: .05rem;
+   @extend .transition;
+   line-height: 60px;
+   height: 60px;
+   display: inline-block;
+
+   &::after{
+      content: '';
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      right: 25px;
+      background-color: $main-grey-color;
+      height: 1px;
+      transition: .3s all ease-in-out;
+   }
+   &--right{
+     .icon{
+       margin-left: 0 !important;
+       margin-right: 10px;
+     }
+     &::after{
+       right: 0;
+       left: 25px;
+     }
+   }
+   &--blue{
+     color: $main-blue-color;
+     .icon{
+       color: $main-blue-color;
+     }
+     &::after{
+       background-color: $main-blue-color;
+     }
+   }
+
+   .icon{
+      font-size: .8rem;
+      margin-left: 10px;
+   }
+
+   &:active,
+   &:focus,
+   &:hover{
+      text-decoration: none;
+      color: $dark-grey-color;
+
+      &::after{
+        bottom: 12px;
+        text-decoration: none;
+         background-color: $dark-grey-color;
+      }
+   }
+}

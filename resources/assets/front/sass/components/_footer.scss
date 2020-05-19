@@ -1,0 +1,297 @@
+.page-footer{
+   background-color: $grey-color;
+   color: $dark-grey-color;
+   padding-top: 320px;
+   // padding-top: 80px;
+   // margin-top: 90px;
+   margin-top: -230px;
+
+   @media (min-width: $screen-sm-min) {
+      margin-top: -260px;
+   }
+
+   @media (min-width: $screen-md-min) {
+      margin-top: -230px;
+   }
+   &__social{
+      border-bottom: 2px solid white;
+      padding-bottom: 40px;
+      margin-bottom: 30px;
+
+      @media (min-width: $screen-sm-min) {
+         padding-bottom: 30px;
+         margin-bottom: 30px;
+      }
+      @media (min-width: $screen-md-min) {
+         padding-bottom: 60px;
+         margin-bottom: 60px;
+      }
+   }
+
+   &__social,
+   &__newsletter{
+
+      @media (min-width: $screen-sm-min) {
+         display: -ms-flexbox;
+         display: -webkit-flex;
+         display: flex;
+         -webkit-flex-direction: row;
+         -ms-flex-direction: row;
+         flex-direction: row;
+         -webkit-flex-wrap: nowrap;
+         -ms-flex-wrap: nowrap;
+         flex-wrap: nowrap;
+         -webkit-justify-content: flex-start;
+         -ms-flex-pack: start;
+         justify-content: flex-start;
+         -webkit-align-content: flex-start;
+         -ms-flex-line-pack: start;
+         align-content: flex-start;
+         -webkit-align-items: flex-start;
+         -ms-flex-align: start;
+         align-items: flex-start;
+      }
+   }
+   &__header{
+      color: $main-blue-color;
+
+      @media (min-width: $screen-sm-min) {
+         width: 30%;
+      }
+
+      .text{
+         margin-bottom: 15px;
+         @media (min-width: $screen-sm-min) {
+            margin-bottom: 20px;
+         }
+      }
+   }
+   &__content{
+      @media (min-width: $screen-sm-min) {
+         width: 70%;
+      }
+   }
+   &__header,
+   &__content{
+      @media (min-width: $screen-sm-min) {
+         -webkit-order: 0;
+         -ms-flex-order: 0;
+         order: 0;
+         -webkit-flex: 0 1 auto;
+         -ms-flex: 0 1 auto;
+         flex: 0 1 auto;
+         -webkit-align-self: center;
+         -ms-flex-item-align: center;
+         align-self: center;
+      }
+   }
+   &__menu{
+      display: inline-block;
+      vertical-align: top;
+   }
+   &__menus{
+      border-bottom: 2px solid white;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+
+      @media (min-width: $screen-sm-min) {
+         padding-bottom: 40px;
+         margin-bottom: 30px;
+      }
+      @media (min-width: $screen-md-min) {
+         padding-bottom: 60px;
+      }
+
+      .col-sm-3:nth-of-type(n+2){
+         margin-top: 30px;
+         @media (min-width: $screen-sm-min) {
+            margin-top: 0;
+         }
+      }
+
+      img{
+         width: 30px;
+         max-height: 25px;
+         vertical-align: top;
+         margin-right: 15px;
+         display: inline-block;
+
+         @media (min-width: $screen-sm-min) {
+            display: block;
+            margin-bottom: 15px;
+         }
+         @media (min-width: $screen-md-min) {
+            margin-bottom: 0;
+            display: inline-block;
+            margin-right: 35px;
+         }
+      }
+
+      .text{
+         font-weight: $font-weight-semibold;
+         color: $main-blue-color;
+         text-transform: uppercase;
+         margin-bottom: 15px;
+         letter-spacing: .15rem;
+         @media (min-width: $screen-sm-min) {
+            margin-bottom: 30px;
+         }
+      }
+
+      li{
+         a{
+            line-height: 35px;
+            display: block;
+            font-size: 1rem;
+            font-family: $font-family-primary;
+            font-weight: $font-weight-regular;
+            transition: .3s all ease-in;
+            letter-spacing: .1rem;
+         }
+      }
+   }
+}
+.credits{
+   padding-bottom: 15px;
+   // background-color: $dark-grey-color;
+   letter-spacing: .1rem;
+
+   @media (min-width: $screen-sm-min) {
+      padding-bottom: 30px;
+   }
+
+   img{
+     @media (min-width: $screen-sm-min) {   
+       float: right;
+     }
+   }
+
+   h6{
+      color: $dark-grey-color;
+      font-size: 12px;
+      letter-spacing: .1rem;
+      line-height: 30px;
+      font-weight: $font-weight-regular;
+
+      span{
+         font-weight: $font-weight-semibold;
+      }
+   }
+
+   ul{
+      margin-bottom: 15px;
+
+      li{
+         position: relative;
+         display: inline-block;
+         margin: 0 7px 0 0;
+
+         @media (min-width: $screen-sm-min) {
+            margin: 0 15px 0 0;
+         }
+
+         &:nth-of-type(n+2){
+            padding-left: 15px;
+
+            @media (min-width: $screen-sm-min) {
+               padding-left: 20px;
+            }
+
+            &::before{
+               content: '|';
+               position: absolute;
+               left: 0;
+               top: 0;
+               bottom: 0;
+               margin: auto 0;
+               color: $main-blue-color;
+               line-height: 35px;
+            }
+         }
+         a{
+            text-transform: uppercase;
+            font-size: .4rem;
+            font-weight: $font-weight-medium;
+            line-height: 35px;
+            display: block;
+            color: $main-blue-color;
+            text-decoration: underline;
+
+            @media (min-width: $screen-sm-min) {
+               font-size: .8rem;
+            }
+
+            &:focus,
+            &:hover{
+               color: $main-grey-color;
+            }
+
+         }
+      }
+   }
+
+   .col-sm-3{
+      &:first-of-type{
+         text-align: left;
+      }
+      &:last-of-type{
+         text-align: right;
+      }
+   }
+
+   img{
+      margin-top: 15px;
+
+      @media (min-width: $screen-sm-min) {
+         margin-top: 30px;
+      }
+      @media (min-width: $screen-md-min) {
+         margin-top: 0;
+      }
+
+   }
+}
+.social-list{
+   display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top:0;
+    }
+
+   li{
+      text-align: center;
+      a{
+         font-weight: $font-weight-bold;
+         color: $dark-grey-color;
+         font-size: 12px;
+         text-transform: uppercase;
+         letter-spacing: .1rem;
+         display: block;
+
+         img{
+            width: 30px;
+            height: 30px;
+            display: block;
+            transition: .3s all ease-in;
+            @media (min-width: $screen-sm-min) {
+               margin: 0 auto 35px;
+            }
+         }
+         span{
+            display: none;
+
+            @media (min-width: $screen-sm-min) {
+               display: block;
+            }
+         }
+         &:hover{
+            text-decoration: none;
+            img{
+               transform: translateY(10px);
+            }
+         }
+      }
+   }
+}

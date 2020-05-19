@@ -1,0 +1,43 @@
+.filters-header{
+  margin-top: 30px;
+  &__top{
+    border-bottom: 1px solid $grey-color;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    color: $main-blue-color;
+
+    span{
+      font-weight: $font-weight-bold;
+    }
+    .filters-btn{
+      float: right;
+    }
+  }
+  &__list{
+    margin-left: 10px;
+
+    li{
+      color: $light-blue-color;
+      display: inline-block;
+      margin-right: 10px;
+
+      .icon{
+        color: $main-grey-color;
+        &:hover{
+          color: $dark-grey-color;
+        }
+      }
+    }
+  }
+  &__bottom{
+    .small-text {
+      color: $main-blue-color;
+    }
+    *{
+      display: inline-block;
+    }
+    span{
+      float: right;
+    }
+  }
+}

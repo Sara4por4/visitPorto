@@ -1,0 +1,80 @@
+.time{
+   line-height: 35px;
+   .icon{
+      margin-right: 5px;
+   }
+   &--grey{
+      color: $grey-color;
+      .icon{
+         color: $grey-color;
+      }
+   }
+}
+
+.share{
+   position: relative;
+
+   &.active{
+      &::before{
+         content:'';
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         background-color: white;
+      }
+      .share__list{
+         display: block;
+      }
+      .card__time{
+         opacity: 0;
+      }
+   }
+
+   &__btn{
+      float:right;
+      text-align: center;
+      width: 35px;
+      line-height: 35px;
+      color: $yellow-color;
+      @extend .transition;
+
+      &:hover{
+         color: $red-color;
+      }
+   }
+   &__list{
+      width: 210px;
+      padding-right: 55px;
+      display: none;
+      @extend .abs-center;
+      left: initial;
+
+      li{
+         display: inline-block;
+
+         a{
+            display: block;
+            width: 35px;
+            line-height: 35px;
+            text-align: center;
+            @extend .transition;
+         }
+         &:hover{
+            a{
+               color: $red-color;
+               text-decoration: none;
+            }
+         }
+      }
+   }
+}
+.author{
+   margin-top: 15px;
+   color: $red-color;
+
+   .icon{
+      margin-right: 5px;
+   }
+}

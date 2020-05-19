@@ -1,0 +1,52 @@
+
+/**
+ * Colors
+ */
+$colors: (
+    'black'            : #282828,
+    'main-blue'        : #00829B,
+    'blue'             : #0C2565,
+    'dark-blue'             : #005B6C,
+    'light-blue'             : #66B4C3,
+    'light-grey'        : #CFD2D9,
+    'dark-grey'        : #9095A0,
+    'grey'             : #E7EAF2,
+    'main-grey'        : #B8BBC1,
+    'white'             : #fff,
+);
+
+/**
+ * Color applications
+*/
+$black-color                : map-get($colors, 'black');
+$orange-color               : map-get($colors, 'orange');
+$main-blue-color            : map-get($colors, 'main-blue');
+$blue-color                 : map-get($colors, 'blue');
+$dark-blue-color            : map-get($colors, 'dark-blue');
+$light-blue-color            : map-get($colors, 'light-blue');
+$light-grey-color           : map-get($colors, 'light-grey');
+$dark-grey-color            : map-get($colors, 'dark-grey');
+$grey-color                 : map-get($colors, 'grey');
+$main-grey-color            : map-get($colors, 'main-grey');
+$white-color                : map-get($colors, 'white');
+
+// Typography
+$font-family-icons: "Material Design Icons";
+$font-family-primary: 'Montserrat', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.6;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 500; //catarina request - 600 before
+$font-weight-bold: 600; //catarina request - 700 before
+
+// Body
+$body-bg: #fff;
+
+// Navbar
+$navbar-default-bg: transparent;
+
+// Panels
+$panel-default-heading-bg: transparent;

@@ -1,0 +1,198 @@
+.cta-wrapper{
+   background-color: $orange-color;
+   border-bottom-left-radius: 6px;
+   border-bottom-right-radius: 6px;
+
+   @media (min-width: $screen-sm-min) {
+      height: 468px;
+   }
+
+   &__el{
+      height: 100%;
+      background-color: $grey-color;
+
+      @media (min-width: $screen-sm-min) {
+         float: left;
+      }
+
+      &:first-of-type{
+         border-top-left-radius: 6px;
+         border-bottom-left-radius: 6px;
+
+         @media (min-width: $screen-sm-min) {
+            width: 60%;
+         }
+         @media (min-width: $screen-md-min) {
+            width: 70%;
+         }
+      }
+      &:last-of-type{
+        text-align: center;
+         border-top-right-radius: 6px;
+         border-bottom-right-radius: 6px;
+
+         @media (min-width: $screen-sm-min) {
+            width: 40%;
+         }
+         @media (min-width: $screen-md-min) {
+            width: 30%;
+         }
+      }
+
+      .slideshow-testemonials{
+         height: 100%;
+         border-top-left-radius: 6px;
+         border-bottom-left-radius: 6px;
+         cursor: grabbing;
+      }
+   }
+}
+.cta-card{
+   height: 100%;
+   position: relative;
+   border-bottom-right-radius: 6px;
+   border-top-right-radius: 6px;
+
+   &__bg{
+      @extend .abs-center;
+      @extend .full-img;
+       border-top-right-radius: 6px;
+       border-bottom-right-radius: 6px;
+
+      &::after{
+         content: '';
+         background-color:rgba(0, 130, 155, 0.7);
+         @extend .abs-center;
+      }
+   }
+   &__caption-wrap{
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+      align-content: stretch;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 100%;
+   }
+   &__caption{
+      color: white;
+      position: relative;
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+      padding: 30px 15px;
+      height: 100%;
+
+      @media (min-width: $screen-sm-min) {
+         padding: 60px 30px 30px;
+      }
+   }
+   &__subtitle{
+      margin-bottom: 30px;
+   }
+
+    &--newsletter{
+      .cta-card__caption{
+        padding: 60px 15px 30px;
+
+        @media (min-width: $screen-md-min) {
+          padding: 100px 100px 60px;
+        }
+      }
+      .cta-card__bg{
+        &::after{
+           content: '';
+           background-color:rgba(0, 0, 0, 0.3);
+         }
+      }
+      .btn{
+        margin-top:15px;
+
+        @media (min-width: $screen-sm-min) {
+          margin-top:30px;
+        }
+      }
+      .cta-card__text{
+        @media (min-width: $screen-md-min) {
+          max-width: 80%;
+        }
+        @media (min-width: $screen-lg-min) {
+          max-width: 70%;
+        }
+      }
+      .cta-card__title{
+        margin-top:15px;
+        margin-bottom:15px;
+        @media (min-width: $screen-sm-min) {
+          margin-top:15px;
+          margin-bottom:15px;
+        }
+      }
+    }
+   &--plan{
+     .cta-card__caption{
+       @media (min-width: $screen-xl-min) {
+         padding: 60px;
+       }
+     }
+     .cta-card__bg{
+
+         &::after{
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+         }
+     }
+     .cta-card__text{
+        letter-spacing: .15rem;
+        color: white;
+        text-transform: inherit;
+        font-weight: $font-weight-light;
+        overflow: hidden;
+        max-height: calc(2.6rem*5);
+        margin-top: 15px;
+
+        @media (min-width: $screen-sm-min) {
+           margin-top: 30px;
+        }
+     }
+     .cta-card__title{
+         max-height: calc(6*1.9rem);
+         overflow: hidden;
+
+         @media (min-width: $screen-sm-min) {
+            max-height: calc(6*2.7rem);
+         }
+     }
+     .btn{
+        margin: 30px auto 0;
+
+        @media (min-width: $screen-sm-min) {
+           margin: auto;
+           max-width: 120px;
+           position: absolute;
+           bottom: 30px;
+           left: 0;
+           right: 0;
+        }
+     }
+   }
+
+}

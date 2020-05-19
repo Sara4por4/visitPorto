@@ -1,0 +1,55 @@
+.instagram{
+   width: 100%;
+   position: relative;
+
+   a{
+      cursor: pointer;
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 90px;
+
+      @media (min-width: $screen-sm-min) {
+         height: 180px;
+      }
+
+      &::before{
+         content: '';
+         background-color:rgba(0,0,0, .3);
+         opacity: 0;
+         @extend .abs-center;
+         transition: opacity .3s ease-in-out;
+
+      }
+
+      img{
+         object-fit: cover;
+         width: 100%;
+         height: 100%;
+
+      }
+      &:hover{
+         &::before,
+         .instagram__info{
+            opacity: 1;
+         }
+      }
+   }
+
+   &__info{
+      @extend .abs-center;
+      height: 30px;
+      opacity: 0;
+      // background-color:rgba(0,0,0, .3);
+      text-align: center;
+      transition: opacity .3s ease-in-out;
+      p{
+         color: white;
+         display: inline-block;
+         margin: 0 15px;
+         span{
+            float: left;
+         }
+      }
+   }
+}
