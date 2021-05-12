@@ -29,7 +29,7 @@
         "@iconfu/svg-inject": "^1.2.3",
         "bootstrap-sass": "^3.4.1",
         "save": "^2.4.0",
-        "swiper": "^4.5.0",
+        "swiper": "^6.5.1",
         "vue-headroom": "^0.10.1",
         "vue-hotel-datepicker": "^2.6.4",
         "vue-slick": "^1.1.15"
